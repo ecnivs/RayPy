@@ -27,8 +27,8 @@ class Player:
             dx += speed_cos
             dy += -speed_sin
         if keys[pg.K_d]:
-            dx += -speed_sin
-            dy += speed_cos
+            dx += -speed_cos
+            dy += speed_sin
             
         self.check_wall_collisions(dx, dy)
 
