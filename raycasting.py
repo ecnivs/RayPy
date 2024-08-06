@@ -41,7 +41,7 @@ class Raycasting:
             delta_depth = dx / cos_a
             dy = delta_depth * sin_a
 
-            for i in range(MAX_DEPTH):
+            for _ in range(MAX_DEPTH):
                 tile_vert = int(x_vert), int(y_vert)
                 if tile_vert in self.game.map.world_map:
                     break
@@ -53,11 +53,14 @@ class Raycasting:
             if depth_vert < depth_hor:
                 depth = depth_vert
             else:
-                depth = depth_hor
+                depth = depth_hor            # draw for debug
+ 
+            # projection
+            proj_height = SCREEN_DIST / (depth + 0.0001)
 
-            # draw for debug
-            pg.draw.line(self.game.screen, 'yellow', (100 * ox, 100 * oy),
-                         (100 * ox + 100 * depth * cos_a, 100 * oy + 100 * depth * sin_a), 2)
+            # draw walls
+            pg.draw.rect(self.game.screen, 'white',
+                         (ray * SCALE, HALF_HEIGHT - proj_height // 2, SCALE, proj_height))
 
             ray_angle += DELTA_ANGLE
 
