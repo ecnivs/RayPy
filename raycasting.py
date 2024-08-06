@@ -55,6 +55,9 @@ class Raycasting:
             else:
                 depth = depth_hor
 
+            # remove fishbowl effect
+            depth *= math.cos(self.game.player.angle - ray_angle)
+
             # draw for debug
             #pg.draw.line(self.game.screen, 'yellow', (100 * ox, 100 * oy),
             #             (100 * ox + 100 * depth * cos_a, 100 * oy + 100 * depth * sin_a), 2)
