@@ -53,8 +53,12 @@ class Raycasting:
             if depth_vert < depth_hor:
                 depth = depth_vert
             else:
-                depth = depth_hor            # draw for debug
- 
+                depth = depth_hor
+
+            # draw for debug
+            #pg.draw.line(self.game.screen, 'yellow', (100 * ox, 100 * oy),
+            #             (100 * ox + 100 * depth * cos_a, 100 * oy + 100 * depth * sin_a), 2)
+
             # projection
             proj_height = SCREEN_DIST / (depth + 0.0001)
 
