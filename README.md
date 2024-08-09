@@ -1,4 +1,4 @@
-# Raycasting Engine
+# RayPy
 ## Overview
 This project demonstrates the use of  the raycasting techniques to create a 3D perspective in a 2D environment. It serves as a foundation for anyone looking to understand the fundamentals of raycasting and how it can be used to simulate a 3D perspective in a 2D environment.
 
