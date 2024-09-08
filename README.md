@@ -14,7 +14,7 @@ This project demonstrates the use of  the raycasting techniques to create a 3D p
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/ecnivs/Blossom.git
+git clone https://github.com/ecnivs/RayPy.git
 ```
 2. Install dependencies:
 ```bash
