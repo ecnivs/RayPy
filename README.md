@@ -12,11 +12,16 @@ This project demonstrates the use of  the raycasting techniques to create a 3D p
     * Math
 
 ## Installation
-* Ensure Python 3.x is installed from python.org.
-* Clone this repository or download and extract the ZIP file.
-
-## Usage
+1. Clone the repository:
+```bash
+git clone https://github.com/ecnivs/Blossom.git
 ```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Run the Software:
+```bash
 python main.py
 ```
 
