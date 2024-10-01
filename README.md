@@ -18,7 +18,7 @@ git clone https://github.com/ecnivs/RayPy.git
 ```
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install pygame
 ```
 3. Run the Software:
 ```bash
