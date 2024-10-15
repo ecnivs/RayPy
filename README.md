@@ -15,6 +15,7 @@ This project demonstrates the use of  the raycasting techniques to create a 3D p
 1. Clone the repository:
 ```bash
 git clone https://github.com/ecnivs/RayPy.git
+cd RayPy
 ```
 2. Install dependencies:
 ```bash
